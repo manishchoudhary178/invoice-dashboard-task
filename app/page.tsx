@@ -198,8 +198,8 @@ export default function InvoiceDashboard() {
                 size="sm"
                 className={
                   selectedPeriod === "1 Month"
-                    ? "bg-[#8134af] text-white"
-                    : "text-[#6b7280] border-[#d9d9d9] bg-transparent"
+                    ? "bg-[#8134af] text-white rounded-2xl"
+                    : "text-[#6b7280] border-[#d9d9d9] bg-transparent rounded-2xl"
                 }
                 onClick={() => handlePeriodChange("1 Month")}
               >
@@ -210,8 +210,8 @@ export default function InvoiceDashboard() {
                 size="sm"
                 className={
                   selectedPeriod === "3 Months"
-                    ? "bg-[#8134af] text-white"
-                    : "text-[#6b7280] border-[#d9d9d9] bg-transparent"
+                    ? "bg-[#8134af] text-white rounded-2xl "
+                    : "text-[#6b7280] border-[#d9d9d9] bg-transparent rounded-2xl"
                 }
                 onClick={() => handlePeriodChange("3 Months")}
               >
@@ -220,7 +220,7 @@ export default function InvoiceDashboard() {
               <Button
                 variant={selectedPeriod === "1 Year" ? "default" : "outline"}
                 size="sm"
-                className={`${selectedPeriod === "1 Year" ? "bg-[#8134af] text-white" : "text-[#6b7280] border-[#d9d9d9] bg-transparent"} flex items-center gap-1`}
+                className={`${selectedPeriod === "1 Year" ? "bg-[#8134af] text-white rounded-2xl" : "text-[#6b7280] border-[#d9d9d9] bg-transparent rounded-2xl"} flex items-center gap-1`}
                 onClick={() => handlePeriodChange("1 Year")}
               >
                 1 Year <Crown className="w-3 h-3" />
@@ -229,7 +229,7 @@ export default function InvoiceDashboard() {
             <Button
               variant="ghost"
               size="sm"
-              className="text-[#6b7280] mt-2 p-0 h-auto hover:text-[#8134af]"
+              className="text-[#6b7280] mt-2 p-0 h-auto hover:text-[#8134af]  border-[#d9d9d9] bg-transparent rounded-2xl"
               onClick={() => handlePeriodChange("Custom")}
             >
               📅 Custom

@@ -5,7 +5,7 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Invoice Dashboard',
+  title: 'Invoice-Dashboard by Manish',
   description: 'A starter template for building modern web applications with Next.js, Tailwind CSS, and Radix UI.',
   generator: 'Next.js',
 }
