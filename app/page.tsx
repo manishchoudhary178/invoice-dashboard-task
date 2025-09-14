@@ -237,23 +237,32 @@ export default function InvoiceDashboard() {
           </div>
 
           {/* Total Earnings */}
-          <div className="px-4 lg:px-0 mb-6">
+          {/* <div className="px-4 lg:px-0 mb-6">
             <p className="text-sm text-[#6b7280] mb-1">Total Earnings</p>
             <p className="text-2xl lg:text-3xl font-bold">$1,25,000</p>
-          </div>
+          </div> */}
+
+          <div className="px-2 lg:px-0 mb-6">
+  <Card className="bg-white border-0 shadow-md hover:shadow-lg transition-shadow">
+    <CardContent className="px-4 py-1 flex flex-col items-start">
+      <p className="text-sm text-[#6b7280] mb-1">Total Earnings</p>
+      <p className="text-3xl lg:text-4xl font-bold text-[#8134af]">$1,25,000</p>
+    </CardContent>
+  </Card>
+</div>
 
           {/* Payment Cards */}
           <div className="flex gap-4 px-4 lg:px-0 mb-6">
             <Card className="flex-1 bg-white border-0 shadow-sm hover:shadow-md transition-shadow">
               <CardContent className="p-4">
                 <p className="text-xs text-[#6b7280] mb-1">Payment Awaited</p>
-                <p className="text-lg font-semibold">$25,000</p>
+                <p className="text-lg text-[#8134af] font-semibold">$25,000</p>
               </CardContent>
             </Card>
             <Card className="flex-1 bg-white border-0 shadow-sm hover:shadow-md transition-shadow">
               <CardContent className="p-4">
                 <p className="text-xs text-[#6b7280] mb-1">Payment Overdue</p>
-                <p className="text-lg font-semibold">$25,000</p>
+                <p className="text-lg text-[#8134af] font-semibold">$25,000</p>
               </CardContent>
             </Card>
           </div>
